@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="863.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvcstopwatchfxml.FXMLDocumentController">
+    <children>
+      <Button fx:id="recordResetButton" layoutX="398.0" layoutY="600.0" mnemonicParsing="false" onAction="#recordResetMonitor" text="Record" />
+        <Button fx:id="startStopButton" layoutX="147.0" layoutY="600.0" onAction="#startStopMonitor" style="-fx-background-color: #008000;" text="Start" />
+      <ImageView fitHeight="373.0" fitWidth="378.0" layoutX="139.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clockface.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand1" fitHeight="322.0" fitWidth="321.0" layoutX="165.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lap2" alignment="CENTER" layoutX="1.0" layoutY="735.0" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="643.0" text="--:--.--">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label fx:id="lap1" alignment="CENTER" layoutX="4.0" layoutY="669.0" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="643.0" text="--:--.--">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label fx:id="lap3" alignment="CENTER" layoutX="3.0" layoutY="795.0" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="634.0" text="--:--.--">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label fx:id="digitalDisplay" alignment="CENTER" layoutX="-1.0" layoutY="527.0" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="650.0" text="--:--.--">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <ImageView fx:id="hand2" fitHeight="242.0" fitWidth="203.0" layoutX="224.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hand_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand3" fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hand_2.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
